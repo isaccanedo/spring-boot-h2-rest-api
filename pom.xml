@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.isaccanedo</groupId>
-	<artifactId>spring-boot-mysql-rest-api-tutorial</artifactId>
+	<artifactId>spring-boot-h2-rest-api-tutorial</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-mysql-rest-api-tutorial</name>
+	<name>spring-boot-h2-rest-api-tutorial</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
