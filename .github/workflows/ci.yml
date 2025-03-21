@@ -13,21 +13,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checar o código do repositório
+      # 1. Checkout code
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # 2. Configurar o Java no ambiente de execução
+      # 2. Set up Java 11
       - name: Set up Java 11
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'openjdk'  # Usando o OpenJDK
+          distribution: 'adopt'  # Using AdoptOpenJDK (alternative: adoptium or zulu)
 
-      # 3. Rodar o comando de build com Maven
+      # 3. Build with Maven
       - name: Build with Maven
         run: mvn clean install
 
-      # 4. Executar os testes do projeto
+      # 4. Run tests
       - name: Run tests
         run: mvn test
