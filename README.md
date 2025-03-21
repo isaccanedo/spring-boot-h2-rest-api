@@ -17,7 +17,7 @@ O projeto utiliza um banco de dados **H2** em memória, sendo criado automaticam
 ### 📄 Configuração no `application.properties`:
 ```properties
 # Banco de dados H2
-spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.url=jdbc:h2:mem:bancoMemoria
 spring.datasource.driver-class-name=org.h2.Driver
 spring.datasource.username=sa
 spring.datasource.password=
@@ -36,7 +36,7 @@ Acesse o console H2 em: [http://localhost:8080/h2-console](http://localhost:8080
 
 ### 1️⃣ Clonar o repositório
 ```sh
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/isaccanedo/spring-boot-h2-rest-api.git
 cd seu-repositorio
 ```
 
@@ -56,39 +56,39 @@ A API estará disponível em: [http://localhost:8080/api](http://localhost:8080/
 
 ### 🔍 Listar todos os funcionários
 ```http
-GET /api/funcionarios
+GET /apiV1/funcionarios
 ```
 
 ### ➕ Criar um novo funcionário
 ```http
-POST /api/funcionario/novo
+POST /apiV1/funcionario/novo
 Content-Type: application/json
 
 {
-  "nome": "João Silva",
-  "cargo": "Analista de Sistemas"
+  "nome": "ISAC CANEDO",
+  "cargo": "ENGENHEIRO DE SOFTWARE"
 }
 ```
 
 ### 🔎 Buscar funcionário por ID
 ```http
-GET /api/funcionario/{id}
+GET /apiV1/funcionario/{id}
 ```
 
 ### ✏️ Atualizar um funcionário
 ```http
-PUT /api/funcionario/{id}
+PUT /apiV1/funcionario/{id}
 Content-Type: application/json
 
 {
-  "nome": "João Pedro Silva",
-  "cargo": "Desenvolvedor Backend"
+  "nome": "ISAC CANEDO",
+  "cargo": "ESPECIALISTA EM ENGENHARIA DE SOFTWARE"
 }
 ```
 
 ### ❌ Deletar um funcionário
 ```http
-DELETE /api/funcionario/{id}
+DELETE /apiV1/funcionario/{id}
 ```
 
 ## 🛠 Estrutura do Projeto
