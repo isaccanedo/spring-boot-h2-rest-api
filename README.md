@@ -111,3 +111,10 @@ DELETE /api/funcionario/{id}
 ├── pom.xml
 └── README.md
 ```
+✅ **Este projeto passou nos testes automatizados utilizando o GitHub Actions**
+
+✅ **Projeto com Integração Contínua:**
+Isso significa que, a cada commit ou pull request enviado para o repositório, o GitHub automaticamente executa o workflow definido com os testes automatizados.
+
+✅ **Projeto com Automação de Build e Testes:**
+O processo de build (compilação) e testes está automatizado, sendo executado sempre que há uma mudança no código.
