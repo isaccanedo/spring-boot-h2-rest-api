@@ -1,0 +1,32 @@
+name: Build and Test Java Project with H2
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checar o código do repositório
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # 2. Configurar o Java no ambiente de execução
+      - name: Set up Java 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      # 3. Rodar o comando de build com Maven
+      - name: Build with Maven
+        run: mvn clean install
+
+      # 4. Executar os testes do projeto
+      - name: Run tests
+        run: mvn test
