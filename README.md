@@ -10,7 +10,7 @@ Este é um projeto **Spring Boot REST API** para gerenciamento de **funcionário
 - **Banco de dados H2 (em memória)**
 - **Maven**
 
-## 🚀 Configuração do Banco de Dados H2
+## 🚀 Configuração do Banco de Dados H2 em Memória
 
 O projeto utiliza um banco de dados **H2** em memória, sendo criado automaticamente ao iniciar a aplicação.
 
