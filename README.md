@@ -1,4 +1,4 @@
-# Spring Boot REST API com o Banco de Dados em Memória H2
+## Spring Boot REST API com o Banco de Dados em Memória H2
 
 Este é um projeto **Spring Boot REST API** para gerenciamento de **funcionários**, utilizando um banco de dados **H2 em memória**. Ele permite criar, listar, atualizar e excluir funcionários através de endpoints REST.
 
