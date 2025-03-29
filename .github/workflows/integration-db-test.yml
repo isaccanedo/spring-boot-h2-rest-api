@@ -14,11 +14,12 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
+          distribution: 'adopt'
 
       - name: Subir a aplicação com H2
         run: mvn clean package && java -jar target/*.jar &
         env:
-          SPRING_DATASOURCE_URL: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+          SPRING_DATASOURCE_URL: jdbc:h2:mem:bancoMemoria;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
 
       - name: Esperar a aplicação iniciar
         run: sleep 10
