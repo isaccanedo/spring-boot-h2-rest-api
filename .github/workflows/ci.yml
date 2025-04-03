@@ -1,7 +1,12 @@
 name: Build and Test Java Project with H2
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
