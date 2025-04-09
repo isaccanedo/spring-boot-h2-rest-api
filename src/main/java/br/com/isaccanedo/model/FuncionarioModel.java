@@ -1,7 +1,7 @@
 package br.com.isaccanedo.model;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "funcionarios")
@@ -9,12 +9,15 @@ import javax.validation.constraints.NotBlank;
 public class FuncionarioModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     @NotBlank
+    @Column(name = "nome")
     private String nome;
 
     @NotBlank
+    @Column(name = "cargo")
     private String cargo;
 
     public Long getId() {
